@@ -1,0 +1,7 @@
+07/14/11 - Added SUNFIRE TEAM. Every character gets Sunfire Cape as their second item.
+07/13/11 - Added a mana-less version for each player (for Garen and Mundo and etc). Scrambled player roles. Added a 1:100 chance to get a joke build.
+07/12/11 - Added a 5 man version. Implemented team-based item detection. No two players will have an Aegis for example
+07/11/11 - Added AP/AD versions
+07/10/11 - Added check for duplicate items. Stackable items still have a chance of duplicating
+07/09/11 - Rewrote and reformatted the script
+07/09/11 - Adopted the code from mononokel

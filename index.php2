@@ -1,0 +1,201 @@
+<?php
+$arrs = array("spells" => array(0 =>
+"Exhaust",
+"Ghost",
+"Heal",
+"Revive",
+"Smite",
+"Teleport",
+"Cleanse",
+"Fortify",
+"Clarity",
+"Ignite",
+"Rally",
+"Clairvoyance",
+"Flash"),
+"images" => array(0 =>
+"Exhaust.png",
+"Ghost.png",
+"Heal.png",
+"Revive.png",
+"Smite.png",
+"Teleport.png",
+"Cleanse.png",
+"Fortify.png",
+"Clarity.png",
+"Ignite.png",
+"Rally.png",
+"Clairvoyance.png",
+"Flash.png"));
+
+$roles = array(0 => "Jungler", "Mid", "Roamer", "Top", "Bottom", "Try-Hard Faggot", "Mundo", "Rager");
+
+$arr = array("boots" => array(0 =>
+"Berserker's Greaves",
+"Boots of Mobility",
+"Boots of Swiftness",
+"Ionian Boots of Lucidity",
+"Mercury's Treads",
+"Ninja Tabi",
+"Sorcerer's Shoes"),
+"images" => array(0 =>
+"Berserker's_Greaves.gif",
+"Boots_of_Mobility.gif",
+"Boots_of_Swiftness.gif",
+"Ionian_Boots_of_Lucidity.gif",
+"Mercury's_Treads.gif",
+"Ninja_Tabi.gif",
+"Sorcerer's_Shoes.gif"));
+
+$arri = array("items" => array(0 =>
+"Archangel's Staff",
+"Banshee's Veil",
+"Deathfire Grasp",
+"Frozen Heart",
+"Frozen Mallet",
+"Hextech Gunblade",
+"Lich Bane",
+"Madred's Bloodrazor",
+"Manamune",
+"Morello's Evil Tome",
+"Nashor's Tooth",
+"Phantom Dancer",
+"Randuin's Omen",
+"Rod of Ages",
+"Shurelya's Reverie",
+"Soul Shroud",
+"Stark's Fervor",
+"Trinity Force",
+"Will of the Ancients",
+"Wriggle's Lantern",
+"Youmuu's Ghostblade",
+"Abyssal Scepter",
+"Aegis of the Legion",
+"Atma's Impaler",
+"Chalice of Harmony",
+"Executioner's Calling",
+"Force of Nature",
+"Guardian Angel",
+"Guinsoo's Rageblade",
+"Haunting Guise",
+"Hexdrinker",
+"Infinity Edge",
+"Last Whisper",
+"Leviathan",
+"Malady",
+"Mejai's Soulstealer",
+"Quicksilver Sash",
+"Rabadon's Deathcap",
+"Rylai's Crystal Scepter",
+"Spirit Visage",
+"Sunfire Cape",
+"Sword of the Divine",
+"Sword of the Occult",
+"The Black Cleaver",
+"The Bloodthirster",
+"Thornmail",
+"Tiamat",
+"Void Staff",
+"Warmog's Armor",
+"Wit's End",
+"Zhonya's Hourglass"),
+"images" => array(0 =>
+"Archangel's_Staff.gif",
+"Banshee's_Veil.gif",
+"Deathfire_Grasp.gif",
+"Frozen_Heart.gif",
+"Frozen_Mallet.gif",
+"Hextech_Gunblade.gif",
+"Lich_Bane.gif",
+"Madred's_Bloodrazor.gif",
+"Manamune.gif",
+"Morello's_Evil_Tome.png",
+"Nashor's_Tooth.gif",
+"Phantom_Dancer.gif",
+"Randuin's_Omen.gif",
+"Rod_of_Ages.gif",
+"Shurelya's_Reverie.gif",
+"Soul_Shroud.gif",
+"Stark's_Fervor.gif",
+"Trinity_Force.gif",
+"Will_of_the_Ancients.gif",
+"Wriggle's_Lantern.png",
+"Youmuu's_Ghostblade.gif",
+"Abyssal_Scepter.gif",
+"Aegis_of_the_Legion.gif",
+"Atma's_Impaler.gif",
+"Chalice_of_Harmony.gif",
+"Executioner's_Calling.gif",
+"Force_of_Nature.gif",
+"Guardian_Angel.gif",
+"Guinsoo's_Rageblade.png",
+"Haunting_Guise.gif",
+"Hexdrinker.gif",
+"Infinity_Edge.gif",
+"Last_Whisper.gif",
+"Leviathan.gif",
+"Malady.gif",
+"Mejai's_Soulstealer.gif",
+"Quicksilver_Sash.gif",
+"Rabadon's_Deathcap.gif",
+"Rylai's_Crystal_Scepter.gif",
+"Spirit_Visage.gif",
+"Sunfire_Cape.gif",
+"Sword_of_the_Divine.gif",
+"Sword_of_the_Occult.gif",
+"The_Black_Cleaver.gif",
+"The_Bloodthirster.gif",
+"Thornmail.gif",
+"Tiamat.gif",
+"Void_Staff.gif",
+"Warmog's_Armor.gif",
+"Wit's_End.gif",
+"Zhonya's_Hourglass.gif"
+));
+
+
+$ran = rand(0, 6);
+$ran1 = rand(0, 50);
+$ran2 = rand(0, 50);
+$ran3 = rand(0, 50);
+$ran4 = rand(0, 50);
+$ran5 = rand(0, 50);
+$ran7 = rand(0, 12);
+$ran8 = rand(0, 12);
+
+while ($ran7 == $ran8)
+{
+   $ran7 = rand(0, 12);
+   $ran8 = rand(0, 12);
+}
+
+echo "Your role is... ";
+echo '<strong>', $roles[rand(0, 7)], '</strong>';
+echo "<br />\n";
+
+echo $arrs[spells][$ran7];
+echo "&nbsp;&nbsp;&nbsp;&nbsp;";
+echo '<img src="'. $arrs[images][$ran7].'"<br_/>'; print "<br />\n";
+echo $arrs[spells][$ran8];
+echo "&nbsp;&nbsp;&nbsp;&nbsp;";
+echo '<img src="'. $arrs[images][$ran8].'"<br_/>'; print "<br />\n";
+
+echo $arr[boots][$ran];
+echo "&nbsp;&nbsp;&nbsp;&nbsp;";
+echo '<img src="'. $arr[images][$ran].'"<br_/>'; print "<br />\n";
+
+echo $arri[items][$ran1];
+echo "&nbsp;&nbsp;&nbsp;&nbsp;";
+echo '<img src="'. $arri[images][$ran1].'"<br_/>'; print "<br />\n";
+echo $arri[items][$ran2];
+echo "&nbsp;&nbsp;&nbsp;&nbsp;";
+echo '<img src="'. $arri[images][$ran2].'"<br_/>'; print "<br />\n";
+echo $arri[items][$ran3];
+echo "&nbsp;&nbsp;&nbsp;&nbsp;";
+echo '<img src="'. $arri[images][$ran3].'"<br_/>'; print "<br />\n";
+echo $arri[items][$ran4];
+echo "&nbsp;&nbsp;&nbsp;&nbsp;";
+echo '<img src="'. $arri[images][$ran4].'"<br_/>'; print "<br />\n";
+echo $arri[items][$ran5];
+echo "&nbsp;&nbsp;&nbsp;&nbsp;";
+echo '<img src="'. $arri[images][$ran5].'"<br_/>'; ?>
